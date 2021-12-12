@@ -9,7 +9,6 @@ const App = () => {
   return (
     <>
       <Header />
-
       <main>
         <Container>
           <Routes>

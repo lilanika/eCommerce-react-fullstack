@@ -11,7 +11,10 @@ node_modules/
 
 # production
 /build
-
+README.MD
+README.md
+/.md
+/.MD
 # misc
 .env
 .DS_Store

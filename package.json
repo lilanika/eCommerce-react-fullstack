@@ -1,0 +1,36 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "history": "^5.1.0",
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^16.13.1",
+    "react-router": "^6.1.0",
+    "react-router-bootstrap": "^0.26.0",
+    "react-router-dom": "^6.1.0",
+    "regenerator-runtime": "^0.13.9",
+    "scheduler": "^0.20.2"
+  },
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilanika/eCommerce-react-fullstack.git"
+  },
+  "author": "lila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilanika/eCommerce-react-fullstack/issues"
+  },
+  "homepage": "https://github.com/lilanika/eCommerce-react-fullstack#readme"
+}

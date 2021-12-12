@@ -1,16 +1,37 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link , useParams } from 'react-router-dom'
 //import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
 import Rating from '../components/Rating'
 //import Message from '../components/Message'
 //import Loader from '../components/Loader'
 import Meta from '../components/Meta'
-import products from '../products'
+//import products from '../products' to test frontend
+import axios from 'axios'
 
-const ProductScreen = ({ history, match }) => {
-  const params = useParams()
-  const product = products.find((p) => p._id === params.id)
+
+const ProductScreen = () => {
+
+const params = useParams()
+
+  //because its one produkt is an object
+  const [product, setProduct] = useState({})
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+   
+      const { data } = await axios.get(`/api/products/${params.id}`) 
+
+      //change the state with product array
+      setProduct(data)
+    }
+
+    
+  //invoke in useEffectt his async function 
+    fetchProduct()
+  }, [])
+
+
 
   return (
     <>
@@ -76,3 +97,6 @@ const ProductScreen = ({ history, match }) => {
 }
 
 export default ProductScreen
+
+
+
