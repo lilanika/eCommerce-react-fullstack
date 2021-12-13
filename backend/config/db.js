@@ -1,10 +1,10 @@
-/* this will be our connection file for mongoose */
+
 
 import mongoose from 'mongoose'
 
 
 
-const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://lila:apfelkuchen@cluster0.lj0j1.mongodb.net";
+const MONGO_URI = process.env.MONGO_URI 
 
 const connectDB = async () => {
   try {
