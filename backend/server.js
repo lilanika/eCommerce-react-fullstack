@@ -2,14 +2,20 @@
 const express = require('express')
 const dotenv = require('dotenv')
 const products = require('./data/products')
+
+
+Hier holen wir uns die Daten vom BackendServer (grade von unserer DummyData from Importieren )
 */
 
 import express from 'express'
-import dotenv  from 'dotenv'
+import dotenv from 'dotenv'
 import products  from './data/products.js'
+import connectDB from './config/db.js'
 
 
-dotenv.config()
+dotenv.config();
+
+connectDB();
 
 const app = express()
 
@@ -20,7 +26,7 @@ app.get('/', (req,res)=>{
 
 //creating a route to display the product array under this adress
 app.get('/api/products', (req,res)=>{
-  //u can use res.send both will converted the  product array to json data
+  //u can use res.send both will converted the  product array to json data //respont with the  Products. js Array 
    res.json(products)
 })
 

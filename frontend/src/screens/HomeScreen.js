@@ -7,6 +7,8 @@ import axios from 'axios'
 const HomeScreen = () => {
 
 
+  /* Hier holen wir uns  mithilfe des GetRequests der URL an die der server die Daten gesendet hat? */
+
   const [products, setProducts] = useState([])
 
   useEffect(() => {
