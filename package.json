@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
+
   "dependencies": {
     "axios": "^0.24.0",
+    "concurrently": "^6.4.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "history": "^5.1.0",
     "js-tokens": "^4.0.0",
     "loose-envify": "^1.4.0",
+    "nodemon": "^2.0.15",
     "object-assign": "^4.1.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -21,7 +26,8 @@
     "scheduler": "^0.20.2"
   },
   "scripts": {
-    "start": "node backend/server"
+    "start": "nodemon backend/server"
+  
   },
   "repository": {
     "type": "git",

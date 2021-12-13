@@ -79,4 +79,11 @@ const products = [
   },
 ]
 
+
+export default products
+
+/* we need to change this with our new syntax when we want to use import and export syntax in our backend 
+
 module.exports = products
+
+*/

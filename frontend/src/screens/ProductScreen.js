@@ -100,3 +100,27 @@ export default ProductScreen
 
 
 
+/*
+ProductSCREEN
+
+This we have use to test the frontend: 
+ const params = useParams()
+  const product = products.find((p) => p._id === params.id)
+*/ 
+
+
+/* 
+Here we want to show a single produkt. 
+check what kind of data one object is. Is a Objekt! its important for our hook. Every  new state needs his own name. 
+
+
+we want to get the ID from the URL 
+How we do it? 
+
+We do that with a variable and props.match.id
+`/api/products${match.params.id
+
+
+
+
+*/
