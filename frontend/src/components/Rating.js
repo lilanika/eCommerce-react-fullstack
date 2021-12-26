@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from 'prop-types'
 
 
-
 const Rating = ({ value, text, color }) => {
   return (
     <div className="rating">
